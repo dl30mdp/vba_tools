@@ -91,21 +91,21 @@ Public Sub openFile(sFile As String)
 End Sub
 
 'Public Sub errorHandler()
-'
+
 '    On Error GoTo ErrorHandler
-'    
+ 
 '    Dim x As Long, y As Long
-'    
+ 
 '    x = 6
 '    y = 6 / 0
 '    x = 7
-'    
+
 'Done:
-'
+
 '    Exit Sub
-'    
+  
 'ErrorHandler:
-'
+
 '    MsgBox "The following error occurred: " & Err.Description
-'    
+ 
 'End Sub
