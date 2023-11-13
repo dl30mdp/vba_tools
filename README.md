@@ -101,7 +101,11 @@ Public Sub errorHandler()
     x = 7
     
 Done:
+
     Exit Sub
+    
 ErrorHandler:
+
     MsgBox "The following error occurred: " & Err.Description
+    
 End Sub
