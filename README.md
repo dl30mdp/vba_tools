@@ -72,3 +72,36 @@ Public Sub sample()
     If lEnu_weekDay = Monday Then weekDay = "Monday"
     
 End Sub
+
+Public Sub openFile(sFile As String)
+    
+    'Dim sFile As String
+    'sFile = "C:\docs\data.xlsx"
+    
+    ' Use Dir to check if file exists
+    If Dir(sFile) = "" Then
+        ' if file does not exist display message
+        MsgBox "Could not find the file " & sFile
+        Exit Sub
+    End If
+    
+    ' Code will only reach here if file exists
+    Workbooks.Open sFile
+    
+End Sub
+
+Public Sub errorHandler()
+
+    On Error GoTo ErrorHandler
+    
+    Dim x As Long, y As Long
+    
+    x = 6
+    y = 6 / 0
+    x = 7
+    
+Done:
+    Exit Sub
+ErrorHandler:
+    MsgBox "The following error occurred: " & Err.Description
+End Sub
