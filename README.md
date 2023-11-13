@@ -29,7 +29,7 @@ Private Sub uHideAll()
     ShQuery.Visible = True
 End Sub
 
-Private Sub enumWeekDay()
+Public Sub enumWeekDay()
     Monday = 1
     Tuesday = 2 
     Wednesday = 3
@@ -39,7 +39,7 @@ Private Sub enumWeekDay()
     Sunday = 7
 End Sub
 
-Private Sub enumMonthNumb()
+Public Sub enumMonthNumb()
     January = 01
     February = 02
     March = 03
@@ -52,4 +52,11 @@ Private Sub enumMonthNumb()
     October = 10
     November = 11
     December = 12
+End Sub
+
+Public Sub sample()
+    Dim lEnu_WeekDay As enu
+    Dim weekDay As String
+
+    If lEnu_weekDay = Monday Then weekDay = "Lunes"
 End Sub
