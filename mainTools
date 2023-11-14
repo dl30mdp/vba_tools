@@ -1,6 +1,3 @@
-# vba
-vba scripts
-
 Private Sub downApps()
 
     Application.ScreenUpdating = False
