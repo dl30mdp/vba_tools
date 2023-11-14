@@ -1,7 +1,7 @@
 # vba
 vba scripts
 
-Private Sub DownApps()
+Private Sub downApps()
 
     Application.ScreenUpdating = False
     Application.Calculation = xlCalculationManual
@@ -11,7 +11,7 @@ Private Sub DownApps()
     
 End Sub
 
-Private Sub UpApps()
+Private Sub upApps()
 
     Application.ScreenUpdating = True
     Application.Calculation = xlCalculationAutomatic
@@ -21,7 +21,7 @@ Private Sub UpApps()
     
 End Sub
 
-Private Sub HideAll()
+Private Sub hideAll()
 
     ShGen.Visible = xlSheetVeryHidden
     ShData.Visible = xlSheetVeryHidden
@@ -64,48 +64,12 @@ Public Sub enumMonthNumb()
     
 End Sub
 
-Public Sub sample()
+'Public Sub enumCallSample()
 
-    Dim lEnu_WeekDay As enu
-    Dim weekDay As String
+    'Dim lEnu_WeekDay As enu
+    'Dim weekDay As String
 
-    If lEnu_weekDay = Monday Then weekDay = "Monday"
+    'If lEnu_weekDay = Monday Then weekDay = "Monday"
     
-End Sub
-
-Public Sub openFile(sFile As String)
-    
-    'Dim sFile As String
-    'sFile = "C:\docs\data.xlsx"
-    
-    ' Use Dir to check if file exists
-    If Dir(sFile) = "" Then
-        ' if file does not exist display message
-        MsgBox "Could not find the file " & sFile
-        Exit Sub
-    End If
-    
-    ' Code will only reach here if file exists
-    Workbooks.Open sFile
-    
-End Sub
-
-'Public Sub errorHandler()
-
-'    On Error GoTo ErrorHandler
- 
-'    Dim x As Long, y As Long
- 
-'    x = 6
-'    y = 6 / 0
-'    x = 7
-
-'Done:
-
-'    Exit Sub
-  
-'ErrorHandler:
-
-'    MsgBox "The following error occurred: " & Err.Description
- 
 'End Sub
+
