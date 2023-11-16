@@ -32,7 +32,7 @@ Private Sub uHideAll()
     
 End Sub
 
-Public Sub enumWeekDay()
+Enum enumWeekDay()
 
     Monday = 1
     Tuesday = 2 
@@ -42,9 +42,9 @@ Public Sub enumWeekDay()
     Saturday = 6
     Sunday = 7
     
-End Sub
+End Enum
 
-Public Sub enumMonthNumb()
+Enum enumMonthNumb
 
     January = 01
     February = 02
@@ -59,11 +59,11 @@ Public Sub enumMonthNumb()
     November = 11
     December = 12
     
-End Sub
+End enum
 
 'Public Sub enumCallSample()
 
-    'Dim lEnu_WeekDay As enu
+    'Dim lEnu_WeekDay As enum
     'Dim weekDay As String
 
     'If lEnu_weekDay = Monday Then weekDay = "Monday"
